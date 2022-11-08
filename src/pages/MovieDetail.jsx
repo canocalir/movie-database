@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react";
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import NavbarMain from "../components/Navbar/Navbar";
 
@@ -11,7 +11,6 @@ const MovieDetail = () => {
   const {
     state: { movie },
   } = useLocation();
-  const navigate = useNavigate();
 
   const {
     poster_path,
@@ -34,7 +33,7 @@ const MovieDetail = () => {
     const data = await res.json();
     setVideoData(data?.results);
   };
-
+/* eslint-disable */
   useEffect(() => {
     fetchVideoHandler();
   }, []);

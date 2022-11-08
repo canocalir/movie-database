@@ -57,6 +57,7 @@ const AppRouter = () => {
       });
     }
   };
+/* eslint-disable */
 
   useEffect(() => {
     fetchDataHandler();
