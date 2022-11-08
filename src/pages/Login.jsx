@@ -53,6 +53,7 @@ const Login = () => {
         theme: "light",
         });
     } catch (err) {
+      setError(err);
       console.log(err.message);
     }
   };
