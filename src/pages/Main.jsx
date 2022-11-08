@@ -87,7 +87,7 @@ const Main = ({
               <Pagination
                 currentPage={page}
                 onPageChange={onPageChangeHandler}
-                showIcons={true}
+                showIcons={false}
                 totalPages={100}
               />
             ) : null}
