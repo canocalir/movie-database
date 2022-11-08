@@ -41,7 +41,7 @@ const NavbarMain = () => {
   );
 
   return (
-    <Navbar className="bg-gray-900 text-gray-200 shadow-lg navbar-light" fluid={false}>
+    <Navbar style={{backgroundColor: '#221b25'}} className="text-gray-200 shadow-lg navbar-light" fluid={false}>
       <NavbarBrand href={"/"}>
         <img
           src={logo}
